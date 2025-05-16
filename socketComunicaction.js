@@ -42,11 +42,14 @@ function main() {
       //Manejar los posibles campos del mensaje
       if ("agua" in data) {
         water_weight_info.innerHTML = `Peso Agua: ${data.agua}`;
-      } else if ("comida" in data) {
+      }
+      if ("comida" in data) {
         food_weight_info.innerHTML = `Peso Comida: ${data.comida}`;
-      } else if ("info" in data) {
+      }
+      if ("info" in data) {
         display_info.innerHTML = `Info: ${data.info}`;
-      } else if ("error" in data) {
+      }
+      if ("error" in data) {
         display_info.innerHTML = `Info: ${data.error}`;
       }
     };
